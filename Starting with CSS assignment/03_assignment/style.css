@@ -1,0 +1,35 @@
+/* This is custom color pallet */
+:root{
+    --text-color:#ff0000;
+    --background-color:#0000ff;
+    --button-color:#008000;
+    --border-color:#ffa500;
+    --button-textcolor: #ffffff;
+
+}
+/* This is targeted by attribute selector   */
+input[id="first"]:hover{
+    background-color: var(--background-color);
+}
+/* This is targeted by pseudo classes focus */
+input:focus{
+    color: var(--text-color);
+    height: 40px;
+  
+}
+input[id="email"]{
+    opacity: 0.2;
+}
+/* This is targeted by attribute selector   */
+
+input[type="button"]{
+    background-color: var(--button-color);
+    border-color: var(--border-color) ;
+    border-radius: 10px;
+    color: var(--button-textcolor);
+}
+
+/* This is targeted by pseudo classes hover and attribute selector */
+input[value="Login"]:hover{
+    padding: 20px;
+}

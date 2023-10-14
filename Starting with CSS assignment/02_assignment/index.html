@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS selectors using BEM Convention</title>
+
+    <!-- this is internal css -->
+    <style>
+        /* This is block-convention */
+        .heading{
+            color: red;
+        }
+        /* This is element-convention */
+        .heading__subheading{
+            color: blueviolet;
+        }
+        .heading__paragraph{
+            color: green;
+        }
+        .btn{
+       
+            padding: 5px 15px;
+            background-color: green;
+            color: white;
+            border: black;
+            border-radius: 10px;
+
+        }
+        /* this is modifier class. We want to change only background-color of login button,and remaining properties of button apply on login button */
+        .btn--background-color{
+            background-color: blue;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- Class name is given using BEM(Block Elements Modifier) conventions -->
+   <h1 class="heading">
+    This class name is given by block convention.
+    <h3 class="heading__subheading">
+        This class name is given by Element convention.
+        <p class="heading__paragraph">This is a paragraph text</p>
+    </h3>
+
+   </h1>
+   <!-- This is modifier convention -->
+   <button class="btn">Logout</button>
+   <button class="btn btn--background-color">Login</button>
+   <br><hr>
+   <p>
+    According to BEM (Block Elements Modifier) convention,we should write class name of parent elements according to semantic tags or content,and their child elements class name is written like parent class name__child class name. Modifiers elements should be written as classname--modifiers class name
+    Example: Parent class name (Block): heading.
+            Child class name (Elements): heading__paragraph.
+            Modifiers class name: btn--backgroundcolor.
+   </p>
+
+ 
+    
+</body>
+</html>

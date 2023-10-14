@@ -1,0 +1,9 @@
+/* external css */
+.external{
+    color:green;
+    font-size: large;
+}
+/* External target */
+.target{
+    background-color: blue;
+}

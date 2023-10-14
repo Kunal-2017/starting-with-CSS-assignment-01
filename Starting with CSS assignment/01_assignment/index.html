@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison between differnt ways to add CSS</title>
+    <!-- this is for external css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- This is for internal css --> 
+    <style>
+        .internal{
+            color: orangered;
+            font-size: large;
+
+        }
+        /* Internal target  */
+        .target{
+            background-color: aqua;
+        }
+    </style>          
+</head>
+<body>
+
+ <!-- This is for inline css --> 
+
+    <div class="inline" style="color: blue; font-size: large;" >This is inline css.</div><br>
+
+    <div class="internal">This is internal css.</div><br>
+
+    <div class="external">This is external css.</div><br>
+    <hr>
+<!-- Inline target -->
+    <div class="target" style="background-color: brown;">
+        <h1>What happens When we target an element by different ways. </h1>
+     </div>
+
+    <p>We see that when we target an element by differnt ways (it means different background color apply on target class div element), inline css gets more priority ,then internal css and least priority gets external css.</p>
+
+    
+</body>
+</html>
